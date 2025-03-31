@@ -1,12 +1,30 @@
-<a href="https://xushiv12.github.io/c++.exe" download><img src="https://cdn.pixabay.com/photo/2021/10/09/10/17/download-6693736_1280.png">下载计算机软件</a>
-<p>或者,<b>用网页版计算机:</b>开始选择要计算的算式,如三重算式:n*n*n,二重算式:n*n,在此输入框里输入三重算式or二重算式:<input id="x"><span id="y"></span></p>
-<script>
-  let x=document.getElementById("x").value.trim();
-  if(x===二重算式){
-    document.getElementById("y").innerText="输入一个整数:<input id='n'><br>输入一个运算符号:<input id='h'><br>输入另一个整数<input id='l'><br><button onclick='x()'>运算</button>";
-  }else if(x===三重算式){document.getElementById("y").innerText="输入一个整数:<input id='n'><br>输入一个运算符号:<input id='h'><br>输入另一个整数<input id='l'><br>输入一个运算符号:<input id='p'><br>输入另一个整数<input id='o'><br><button onclick='y()'>运算</button>";}else{
-    alert("我们不支持其他重的算式");
-  }
-  function x(){let u=document.getElementById("h").value.trim();let a=document.getElementById("n").value.trim();let b=document.getElementById("l").value.trim();if(h==="+"){ alert(a+b);}else if(h==="-"){alert(a-b);}else if(h==="*"){alert(a*b);}else if(h==="/"){alert(a/b);}}
-  function y(){let o=document.getElementById("n").value.trim();let p=document.getElementById("h").value.trim();let q=document.getElementById("l").value.trim();let r=document.getElementById("p").value.trim();let s=document.getElementById("o").value.trim();if(p===""){if(){}else if(){}else if(){}else if(){}}else if(){if(){}else if(){}else if(){}else if(){}}else if(){if(){}else if(){}else if(){}else if(){}}else if(){if(){}else if(){}else if(){}else if(){}}}
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>前端双人聊天室</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
+    #chat { background: #fff; padding: 10px; height: 300px; overflow-y: auto; border: 1px solid #ccc; margin-bottom: 10px; }
+    .msg { margin: 5px 0; padding: 6px 10px; border-radius: 6px; max-width: 70%; }
+    .you { background-color: #d9fdd3; text-align: right; float: right; clear: both; }
+    .other { background-color: #e9e9e9; float: left; clear: both; }
+  </style>
+</head>
+<body>
+
+  <h2>🗨️ Firebase 聊天室</h2>
+  <div id="chat"></div>
+
+  <input type="text" id="name" placeholder="你的名字" />
+  <input type="text" id="message" placeholder="输入消息..." />
+  <button onclick="sendMessage()">发送</button>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+  <script scr="https://xushiv12.github.io/xuy.js"></script>
+
+</body>
+</html>
